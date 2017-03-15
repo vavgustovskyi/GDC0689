@@ -1,15 +1,15 @@
-(kicad_pcb (version 4) (host pcbnew 4.0.5)
+(kicad_pcb (version 4) (host pcbnew 4.0.4-stable)
 
   (general
-    (links 51)
-    (no_connects 0)
+    (links 52)
+    (no_connects 1)
     (area 34.924999 29.924999 105.075001 70.075001)
     (thickness 1.6)
     (drawings 25)
-    (tracks 197)
+    (tracks 199)
     (zones 0)
     (modules 10)
-    (nets 52)
+    (nets 51)
   )
 
   (page A4)
@@ -141,7 +141,6 @@
   (net 48 /COM1)
   (net 49 "Net-(LCD1-Pad30)")
   (net 50 "Net-(R1-Pad2)")
-  (net 51 "Net-(R2-Pad3)")
 
   (net_class Default "Это класс цепей по умолчанию."
     (clearance 0.2)
@@ -200,7 +199,6 @@
     (add_net "Net-(HT1621B1-Pad31)")
     (add_net "Net-(LCD1-Pad30)")
     (add_net "Net-(R1-Pad2)")
-    (add_net "Net-(R2-Pad3)")
   )
 
   (module Pin_Headers:Pin_Header_Straight_1x07_Pitch2.54mm (layer B.Cu) (tedit 5862ED52) (tstamp 58C59536)
@@ -524,7 +522,7 @@
     (pad 2 thru_hole circle (at 0 0 180) (size 1.5 1.5) (drill 0.8) (layers *.Cu *.Mask B.SilkS)
       (net 16 /VLCD))
     (pad 3 thru_hole circle (at 0 -2.54 180) (size 1.5 1.5) (drill 0.8) (layers *.Cu *.Mask B.SilkS)
-      (net 51 "Net-(R2-Pad3)"))
+      (net 16 /VLCD))
     (model pth_resistors/trimmer_bourns_3250w.wrl
       (at (xyz 0 0 0))
       (scale (xyz 0.8 0.8 0.8))
@@ -866,6 +864,8 @@
   (segment (start 76.4921 46.2921) (end 76.4921 44.957) (width 0.25) (layer B.Cu) (net 15) (tstamp 58C6C864))
   (segment (start 85.8 47.2) (end 102.86 47.2) (width 0.25) (layer B.Cu) (net 15))
   (segment (start 102.86 47.2) (end 102.9 47.24) (width 0.25) (layer B.Cu) (net 15) (tstamp 58C6C8A5))
+  (segment (start 47.4 62.54) (end 47.4 61.47934) (width 0.25) (layer F.Cu) (net 16))
+  (segment (start 47.4 61.47934) (end 47.4 60) (width 0.25) (layer F.Cu) (net 16))
   (segment (start 77.1271 44.957) (end 77.1271 42.7271) (width 0.25) (layer B.Cu) (net 16))
   (segment (start 41.3 56.7186) (end 39.2938 58.7248) (width 0.25) (layer F.Cu) (net 16) (tstamp 58C6D80A))
   (segment (start 41.3 42.75) (end 41.3 56.7186) (width 0.25) (layer F.Cu) (net 16) (tstamp 58C6D7F9))
